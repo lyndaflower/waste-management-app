@@ -1,16 +1,20 @@
 import React from "react";
-function Register() {
+import Registe from "../img/regi.png";
+function Register(props) {
+  console.log(props);
   return (
-    <div className="grid md:grid-cols-2">
-      <div className=" "></div>
+    <div className="grid md:grid-cols-2 mx-auto my-12">
+      <div className="h-[685px] w-full">
+          <img src={Registe} className="w-full h-full object-cover"/>
+        </div>
 
       {/* <div class="  border border-green-800 w-full  max-w-sm  bg-grey-400   rounded-lg shadow sm:p-6 md:p-8 "> */}
 
       <div className="  w-full    bg-grey-400   rounded-lg shadow sm:p-6 md:p-8 ">
         <form class="" action="#">
-          <h1 class=" text-xl  font-medium mb-4 text-black ">Register</h1>
+          <h1 class=" text-xl  font-medium mb-4  text-black ">Register</h1>
           <div className="grid md:grid-cols-2">
-            <div>
+            <div className="border-green-950">
               <label
                 for="email"
                 class="block  text-sm font-medium text-gray-900 text-black"
@@ -21,7 +25,7 @@ function Register() {
                 type="Name"
                 name="Name"
                 id="Name"
-                class=" border border-green-800 border-2 mb-4 mr-4 text-black text-sm rounded-full w-full  p-2.5"
+                class=" border border-green-950 border-2 mb-4 mr-4 text-black text-sm rounded-full w-full  p-2.5"
                 placeholder="David Karega"
                 required
               />
@@ -37,7 +41,7 @@ function Register() {
                 type="phoneNumber"
                 name="phoneNumber"
                 id="phoneNumber"
-                class=" border border-green-800 border-2 mb-4 ml-4 text-black text-sm rounded-full w-full p-2.5"
+                class=" border border-green-950 border-2 mb-4 ml-4 text-black text-sm rounded-full w-full p-2.5"
                 placeholder="078*********"
                 required
               />
@@ -53,7 +57,7 @@ function Register() {
                 type="email"
                 name="email"
                 id="email"
-                class=" border border-green-800 border-2 mb-4 mr-4 text-black text-sm rounded-full w-full p-2.5"
+                class=" border border-green-950 border-2 mb-4 mr-4 text-black text-sm rounded-full w-full p-2.5"
                 placeholder="Example@company.com"
                 required
               />
@@ -70,7 +74,7 @@ function Register() {
                 name="password"
                 id="password"
                 placeholder="••••••••"
-                class=" border border-green-800 border-2 mb-4 ml-4 text-gray-900 text-sm rounded-full  w-full p-2.5 "
+                class=" border border-green-950 border-2 mb-4 ml-4 text-gray-900 text-sm rounded-full  w-full p-2.5 "
                 required
               />
             </div>
@@ -86,7 +90,7 @@ function Register() {
               </label>
               <select
                 id="provence"
-                className=" border border-green-800 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
+                className=" border border-green-950 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
               >
                 <option value="provence"></option>
                 <option value="provence">SELECT PROVENCE</option>
@@ -105,7 +109,7 @@ function Register() {
               </label>
               <select
                 id="district"
-                className=" border border-green-800 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
+                className=" border border-green-950 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
               >
                 <option value="district"></option>
                 <option value="district">SELECT PROVENCE</option>
@@ -124,7 +128,7 @@ function Register() {
               </label>
               <select
                 id="sector"
-                className=" border border-green-800 border-2 mb-4 text-black  px-4 text-sm rounded-full w-lg p-2.5"
+                className=" border border-green-950 border-2 mb-4 text-black  px-4 text-sm rounded-full w-lg p-2.5"
               >
                 <option value="provence"></option>
                 <option value="provence">SELECT PROVENCE</option>
@@ -143,7 +147,7 @@ function Register() {
               </label>
               <select
                 id="village"
-                className=" border border-green-800 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
+                className=" border border-green-950 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
               >
                 <option value="provence"></option>
                 <option value="provence">SELECT PROVENCE</option>
@@ -161,7 +165,7 @@ function Register() {
               </label>
               <select
                 id="cell"
-                className=" border border-green-800 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
+                className=" border border-green-950 border-2 mb-4 text-black text-sm rounded-full w-lg p-2.5"
               >
                 <option value="provence"></option>
                 <option value="provence">SELECT PROVENCE</option>
@@ -181,7 +185,7 @@ function Register() {
                 type="propertyNumber"
                 name="propertyNumber"
                 id="propertyNumber"
-                class=" border border-green-800 border-2 mb-8 text-black text-sm rounded-full w-lg p-2.5"
+                class=" border border-green-950 border-2 mb-8 text-black text-sm rounded-full w-lg p-2.5"
                 placeholder="*********"
                 required
               />
@@ -195,7 +199,7 @@ function Register() {
                   id="remember"
                   type="checkbox"
                   value=""
-                  class="w-4 h-4 border border-gray-300 mt-8 mb-8 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                  class="w-4 h-4 border border-gray-800 mt-8 mb-8 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
                   required
                 />
               </div>
@@ -210,12 +214,13 @@ function Register() {
           </div>
           <button
             type="submit"
-            class="w-4/5 text-white bg-blue-700 mb-8 hover:bg-blue-800 focus:ring-4 focus:outline-none font-medium rounded-full text-sm px-5 py-2.5 text-center dark:bg-green-900 "
+            class="w-4/5 text-white  mb-8  focus:ring-4  font-medium rounded-full text-sm px-36 py-3.5 text-center dark:bg-green-900 "
+            onClick={()=>props.setOpen(true)}
           >
-            Register
+            Submit
           </button>
           <div class="text-sm font-medium text-gray-500 dark:text-gray-300">
-            Not registered?{" "}
+      
             <a
               href="#"
               class="text-blue-700 hover:underline dark:text-blue-500"

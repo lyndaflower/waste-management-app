@@ -36,7 +36,7 @@ const Footer = () => {
   const pageFive = ["Contact", "Term of Use", "Privacy Policy"];
 
   return (
-    <div className="mt-4 dark:bg-green-900 font-awesome">
+    <div className="dark:bg-green-950 font-awesome">
       <footer className="p-6 dark:bg-green-900 dark:text-green-100">
         <div className="container grid grid-cols-2 mx-auto gap-x-3 gap-y-8 sm:grid-cols-2 md:grid-cols-4">
           <div className="flex flex-col p-2">
